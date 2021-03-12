@@ -32,7 +32,7 @@ module.exports = (content, workerConstructor, workerOptions, url) => {
         workerOptions
       );
 
-      URL.revokeObjectURL(objectURL);
+      setTimeout(function() { URL.revokeObjectURL(objectURL); });
 
       return worker;
     } catch (e) {
