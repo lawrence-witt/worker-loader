@@ -1,3 +1,5 @@
+> **NOTE**: This is a simple fork of worker-loader which calls `URL.revokeObjectURL` inside a `setTimeout` in order to fix inline worker loading on IE11.
+
 <div align="center">
   <a href="https://github.com/webpack/webpack">
     <img width="200" height="200" src="https://webpack.js.org/assets/icon-square-big.svg">
